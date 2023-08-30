@@ -14,13 +14,17 @@
 body {
     min-width: 375px;
     max-width: 1440px;
-    width: 100%;
 }
 
 /* Main */
 
 main {
     color: hsl(234, 29%, 20%);
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
 }
 
 #text-container {
@@ -64,28 +68,106 @@ main {
 }
 
 #form-container input {
-    margin: 10px 0px 20px;
-    padding: 15px;
+    margin: 10px 0px 25px;
+    padding: 20px;
+    font-size: 12pt;
     width: 100%;
     border: 1px solid hsl(231, 7%, 60%);
-    border-radius: 8px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-#form-container button {
+#form-container a {
+    text-decoration: none;
+}
+
+#form-container a button {
     background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
     font-weight: bold;
-    padding: 15px;
+    font-size: 12pt;
+    padding: 20px;
     width: 100%;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
+
+@media screen and (min-width: 1440px) {
+    body {
+        min-width: 1440px;
+        max-width: 100%;
+        width: 100%;
+        background-color: hsl(234, 29%, 20%);
+        color: white;
+        padding: 80px 200px 0;
+    }
+
+    main {
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 70px;
+        width: 85%;
+        margin: 0 auto;
+        padding: 40px 0;
+        border-radius: 50px;
+    }
+    
+    #img-container {
+        height: 80vh;
+        
+    }
+    
+    #img-container img {
+        height: 100%;
+    }
+    
+    #text-container {
+        height: 65%;
+        padding: 100px 0;
+    }
+    
+    #text-container h1 {
+        font-size: 52pt;
+    }
+
+    #text-container p {
+        padding: 50px 0;
+    }
+
+    #text-container p, #text-container li {
+        font-size: 16pt;
+    }
+
+    #form-container {
+        padding: 0;
+    }
+
+    #form-container label {
+        cursor: pointer;
+    }
+
+    #form-container input:hover {
+        border: 1px solid black;
+    }
+
+    #form-container button {
+        cursor: pointer;
+    }
+
+    #form-container button:hover {
+        background-image: linear-gradient(to right, #FF5379, #FF673E);
+    }
+}
 
 /* Footer */
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 20px
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 

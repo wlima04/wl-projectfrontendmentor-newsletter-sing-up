@@ -10,29 +10,34 @@
 <body>
   <main>
     <section id="img-container">
-      <img src="assets/images/illustration-sign-up-mobile.svg" alt="imagem de fundo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="assets/images/illustration-sign-up-desktop.svg" type="image/png">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="imagem de fundo">
+      </picture>
     </section>
-    <section id="text-container">
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul>
-        <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">Product discovery and building what matters</li>
-        <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">Measuring to ensure updates are a success</li>
-        <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">And much more!</li>
-      </ul>
-    </section>
-    <section id="form-container">
-      <form>
-        <label for="inptEmail">Email address</label>
-        <input type="email" name="inptEmail" id="inptEmail" placeholder="email@company.com">
-        <button type="submit" id="btnSubmit">Subscribe to monthly newsletter</button>
-      </form>
-    </section>
+    <div id="text-content">
+      <section id="text-container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">Product discovery and building what matters</li>
+          <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">Measuring to ensure updates are a success</li>
+          <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">And much more!</li>
+        </ul>
+      </section>
+      <section id="form-container">
+        <form>
+          <label for="inptEmail">Email address
+            <input type="email" name="inptEmail" id="inptEmail" placeholder="email@company.com">
+          </label>
+          <a href="pagesucess.html"><button type="button" id="btnSubscribe">Subscribe to monthly newsletter</button></a>
+        </form>
+      </section>
+    </div>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/wlima04" target="_blank">Welliton Lima</a>.
   </footer>
-
 </body>
 </html>
