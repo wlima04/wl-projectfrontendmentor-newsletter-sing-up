@@ -45,8 +45,13 @@ main {
 
 #text-container ul li {
     display: flex;
-    align-items: start;
+    align-items: center;
     margin-bottom: 15px;
+}
+
+#text-container ul li img {
+    height: 22px;
+    margin-right: 20px;
 }
 
 .icon-list {
@@ -95,7 +100,7 @@ main {
 
 @media screen and (min-width: 1440px) {
     body {
-        min-width: 1440px;
+        min-width: 1735px;
         max-width: 100%;
         width: 100%;
         background-color: hsl(234, 29%, 20%);
@@ -167,7 +172,7 @@ main {
 .attribution { 
     font-size: 11px; 
     text-align: center;
-    margin-top: 20px
+    margin-top: 18px
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
